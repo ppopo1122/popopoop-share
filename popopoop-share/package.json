@@ -1,0 +1,1 @@
+{"name":"popopoop-share","version":"1.0.0","private":true,"type":"module","scripts":{"start":"node server.js","build:public":"node scripts/build-public.js"}}
