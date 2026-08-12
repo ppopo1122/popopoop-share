@@ -21,6 +21,8 @@ header button:disabled{cursor:not-allowed;opacity:.32;filter:saturate(.35)}
 .tag-tabs button b{min-width:23px;padding:3px 6px;border-radius:12px;background:#081722;color:#80cffa;font-size:10px;text-align:center}
 .tag-tabs button.active b{background:#66c0f4;color:#092033}
 .tag-content{scroll-margin-top:150px}
+.tag-tabs-shell.bottom{position:static;margin:24px 0 0;padding:18px 18px 8px;background:#0c1b28;border:1px solid var(--line)}
+.tag-tabs-label{margin:0 0 12px;color:#8fa9bb;font-size:11px;font-weight:700;letter-spacing:.08em}
 .selected-group{animation:tagReveal .2s ease}
 .selected-group .group-head small{color:var(--cyan);font-size:9px;font-weight:700;letter-spacing:.14em}
 @keyframes tagReveal{from{opacity:.35;transform:translateY(6px)}to{opacity:1;transform:none}}
