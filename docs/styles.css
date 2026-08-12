@@ -11,3 +11,17 @@ body,button,input,textarea{font-family:GMarketSans,"Noto Sans KR",Segoe UI,sans-
 header button:disabled{cursor:not-allowed;opacity:.32;filter:saturate(.35)}
 .admin-head h2{margin:0;font-size:20px}.editor{max-width:1100px;width:100%;margin:0 auto}.admin-wrap{background:#0b1620}
 .field input:focus,.field textarea:focus{outline:1px solid var(--cyan);border-color:var(--cyan)}
+
+/* Tag tabs for the public game guide */
+.tag-tabs-shell{position:sticky;top:72px;z-index:15;margin:0 0 22px;padding:12px 0;background:linear-gradient(180deg,#09131d 75%,transparent)}
+.tag-tabs{display:flex;gap:9px;padding:2px 1px 10px;overflow-x:auto;overscroll-behavior-x:contain;scrollbar-color:#35566f #08131c}
+.tag-tabs button{flex:0 0 auto;display:flex;align-items:center;gap:10px;padding:11px 15px;border:1px solid #31536b;border-radius:22px;background:#102331;color:#a9bdca;font-weight:700;cursor:pointer;transition:.16s}
+.tag-tabs button:hover{border-color:#66c0f4;color:white;background:#163248}
+.tag-tabs button.active{border-color:#66c0f4;background:linear-gradient(90deg,#17668f,#24496a);color:white;box-shadow:0 7px 20px rgba(26,139,199,.22)}
+.tag-tabs button b{min-width:23px;padding:3px 6px;border-radius:12px;background:#081722;color:#80cffa;font-size:10px;text-align:center}
+.tag-tabs button.active b{background:#66c0f4;color:#092033}
+.tag-content{scroll-margin-top:150px}
+.selected-group{animation:tagReveal .2s ease}
+.selected-group .group-head small{color:var(--cyan);font-size:9px;font-weight:700;letter-spacing:.14em}
+@keyframes tagReveal{from{opacity:.35;transform:translateY(6px)}to{opacity:1;transform:none}}
+@media(max-width:600px){.tag-tabs-shell{top:124px;margin-left:-14px;margin-right:-14px;padding-left:14px;padding-right:14px}.tag-tabs button{padding:10px 13px}.page-head h1{font-size:39px}.page-head>strong{font-size:12px}.group{padding:13px}.tag-content{scroll-margin-top:190px}}
